@@ -1,7 +1,11 @@
+import os
+from dotenv import load_dotenv
 from fonction import *
 
 if __name__ == "__main__":
-    url = "https://quotes.toscrape.com/"
+    load_dotenv()
+    url = os.getenv('URL')
+    print(url)
     print("\nChargement ...\n")
     soup = get_BeautifulSoup(url)
     top_tags = [tag.string for tag in soup.find('div','tags-box').find_all('a','tag')]

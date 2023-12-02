@@ -1,8 +1,8 @@
-beautifulsoup4==4.12.2
-bs4==0.0.1
+beautifulsoup4 @ file:///croot/beautifulsoup4-split_1681493039619/work
 certifi==2023.11.17
 charset-normalizer==3.3.2
 idna==3.6
+python-dotenv==1.0.0
 requests==2.31.0
-soupsieve==2.5
+soupsieve @ file:///croot/soupsieve_1696347547217/work
 urllib3==2.1.0
